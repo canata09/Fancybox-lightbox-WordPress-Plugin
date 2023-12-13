@@ -52,12 +52,7 @@
 					return null;
 				}
 
-				// Retrieve ID Range from options
-				$id_range_start = get_option('id_range_start', 2093); // default value is 10
-				$id_range_end = get_option('id_range_end', 2100); // default value is 20
-
-
-				for ($id = $id_range_start; $id <= $id_range_end; $id++) {
+				for ($id = 2093; $id <= 2100; $id++) {
 					$htmldoc = file_get_contents("https://www.klinisyen.com/index.php?route=product/product&product_id=$id");
 					$html = file_get_contents("https://www.klinisyen.com/index.php?route=product/product&product_id=$id");
 					$text = getTextSource($htmldoc);
