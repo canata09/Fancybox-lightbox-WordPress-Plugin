@@ -1,6 +1,6 @@
 # Welcome to the Fancybox lightbox WordPress Plugin
 
-![Plugin Logo](plugin_logo.jpg)
+![Plugin Logo](plugin_logo.png)
 
 👋 Welcome to the official repository of the XYZ Plugin! We're thrilled to introduce you to our powerful and versatile software plugin, meticulously crafted by our talented team of software engineers. Whether you're a developer, designer, or an enthusiast, this plugin aims to enhance your experience by bringing a new dimension to your workflow.
 
