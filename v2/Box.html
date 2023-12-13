@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+    </head>
+    <body>
+        <h1>Welcome to my website!</h1>
+        <p>This is some sample text.</p>
+
+        <a data-fancybox-group="gallery" class="fancybox" rel="group" href="https://www.w3schools.com/html/pic_trulli.jpg"><img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333"></a>
+        
+        <a href="image-a.jpeg" data-fancybox>
+            Click me
+          </a>
+
+          <a href="image-a.jpeg" data-fancybox>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" />
+          </a>
+          <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
+            <img src="https://lipsum.app/id/4/200x150" />
+          </a>
+        <button type="button" aria-label="{{GOTO}}"><img class="f-thumb" data-lazy-src="{{%s}}" alt="" /></button>
+
+
+
+        <a id="single_image" href="image_big.jpg"><img src="https://lipsum.app/id/4/1024x768" alt=""/></a>
+        <a id="inline" href="#data">This shows content of element who has id="data"</a>
+
+        <div style="display:none"><div id="data">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
+
+        <script>
+$(document).ready(function() {
+
+/* This is basic - uses default settings */
+
+$("a#single_image").fancybox();
+
+/* Using custom settings */
+
+$("a#inline").fancybox({
+    'hideOnContentClick': true
+});
+
+/* Apply fancybox to multiple items */
+
+$("a.group").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600, 
+    'speedOut'		:	200, 
+    'overlayShow'	:	false
+});
+
+});
+        </script>
+    </body>
+</html>

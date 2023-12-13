@@ -1,0 +1,6 @@
+https://github.com/fancyapps/fancybox/releases/tag/V2.1.7
+https://copyprogramming.com/howto/fancybox-v2-css-for-v3
+http://fancybox.net/howto
+https://groups.google.com/g/fancybox/c/ncVsViD2v9o/m/JE0DHYPuEOgJ
+https://isotope.metafizzy.co/
+https://www.codeproject.com/Tips/729361/Display-images-and-videos-in-a-FancyBox-gallery
